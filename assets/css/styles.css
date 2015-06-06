@@ -1,11 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
 /* CSS Document */
+html,body {
+	height:100%;
+}
 
 body {
-	font-size: 12px;
+	font-size: 14px;
   line-height: 18px;
 	padding:0;
 	color:#777;
-	background:#f7f7f7
+	margin:0;
+	font-family:"open sans"
+}
+
+a {
+	text-decoration:none;
+}
+
+ul {
+	margin:0;
+	padding:0
+}
+
+ul li {
+	list-style:none
+}
+
+.clearfix {
+	clear:both
+}
+
+.pull-middle {
+	margin: auto
+}
+
+.responsive {
+	max-width:100%
 }
 
 a,
@@ -18,4 +49,103 @@ a:hover {
 	-moz-transition-timing-function: cubic-bezier(0.300, 0.000, 0.200, 1.000);
 	-o-transition-timing-function: cubic-bezier(0.300, 0.000, 0.200, 1.000);
 	transition-timing-function: cubic-bezier(0.300, 0.000, 0.200, 1.000); /* custom */
+}
+
+
+hgroup {
+	text-align:center;
+}
+
+small {
+	display:block;
+	color:orange;
+	font-size:0.95em;
+}
+
+h1 {
+	margin:0;
+	font-weight:300;
+	color:#fff;
+	line-height:1.2em;
+	font-size:1.6em;
+	margin-bottom:0.2	em;
+}
+
+h2 {
+	margin:0;
+	color:#fff;
+	font-size:1.32em;
+	font-weight:400
+}
+
+nav,
+footer,
+main {
+	padding:20px;
+}	
+
+header {
+	background:#999
+}
+
+.logo {
+	width:100%;
+	text-align:center;
+	padding:30px 0 0 0;
+}
+
+.logo-text {
+	padding:15px 30px;
+	text-align:center
+}
+
+.btn {
+	color:#fff;
+	border-radius:4px;
+	background:#f8af3b;
+	padding:15px;
+	font-size:1em;
+	display:block;
+	text-align:center;
+	font-weight:600;
+	border-bottom:4px solid #e4a239
+}
+
+.btn:hover {
+	background:#e4a239;
+}
+
+.result {
+	text-align:center;
+}
+
+@media (max-width: 768px) {
+	body {
+		background:url(../img/bg_mobile.jpg) bottom no-repeat;
+		background-size:cover;
+	}
+	main {
+		position:relative;
+		z-index:2
+	}
+	.bg-bottom {
+		height:200px;
+		width:100%;
+		background:url(../img/bg_mobile_bottom.png);
+		position:absolute;
+		background-size:cover;
+		bottom:0;
+		z-index:1
+	}
+	main {
+		width:auto;
+		margin:auto
+	}
+}
+
+@media (min-width:1280px) {
+	main {
+		width:1280px;
+		margin:auto
+	}
 }

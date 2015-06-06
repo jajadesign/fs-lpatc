@@ -1,5 +1,3 @@
- 	</main><!-- // main -->
-  
   <footer>
     FOOTER
   </footer>

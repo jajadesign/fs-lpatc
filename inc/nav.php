@@ -1,3 +1,5 @@
-<nav>
-  NAV
-</nav>
+<header>
+  <nav>
+    NAV
+  </nav>
+</header>
