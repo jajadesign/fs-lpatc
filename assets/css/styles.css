@@ -56,13 +56,13 @@ hgroup {
 	text-align:center;
 }
 
-small {
+hgroup small {
 	display:block;
 	color:orange;
 	font-size:0.95em;
 }
 
-h1 {
+hgroup h1 {
 	margin:0;
 	font-weight:300;
 	color:#fff;
@@ -71,27 +71,17 @@ h1 {
 	margin-bottom:0.2	em;
 }
 
-h2 {
+hgroup h2 {
 	margin:0;
 	color:#fff;
 	font-size:1.32em;
 	font-weight:400
 }
 
-nav,
-footer,
-main {
-	padding:20px;
-}	
-
-header {
-	background:#999
-}
-
 .logo {
 	width:100%;
 	text-align:center;
-	padding:30px 0 0 0;
+	padding:0 0 30px 0;
 }
 
 .logo-text {
@@ -99,7 +89,7 @@ header {
 	text-align:center
 }
 
-.btn {
+.btn-hero {
 	color:#fff;
 	border-radius:4px;
 	background:#f8af3b;
@@ -111,13 +101,95 @@ header {
 	border-bottom:4px solid #e4a239
 }
 
-.btn:hover {
+.btn-hero:hover {
 	background:#e4a239;
 }
 
 .result {
 	text-align:center;
+	color:#fff;
+	font-size:18px;
+	font-weight:300;
+	margin:0 0 30px 0
 }
+
+.result strong {
+	font-weight:600
+}
+
+.panel {
+	border:none !important;
+	border-radius:2px !important
+}
+
+.lst-items .panel [class^="col-"] {
+	padding:0
+}
+
+.lst-items h2 {
+	font-size:16px;
+}
+
+.brand-men {
+	color:#6bc7b4
+}
+
+.brand-women {
+	color:#d6437d
+}
+
+.container {
+	padding-top:60px;
+	padding-bottom:60px;
+}
+
+header[role="navigation"] {
+	background:url(../img/header_navigation.png) bottom no-repeat;
+	color:#fff;
+	height:60px;
+}
+
+header[role="navigation"] [class^="col-"] {
+	padding:15px;
+	height:60px;
+	font-weight:600;
+}
+
+header[role="navigation"] a {
+	color:#fff
+}
+
+header[role="navigation"] .logo-mini {
+	max-width:160px;
+}
+
+.nav-pills > li {
+	margin:0 !important
+}
+
+.nav-pills > li > a {
+	border-bottom:1px solid #ecf1f6;
+	border-radius:0 !important;
+	color:#aabdd2;
+	padding:15px !important;
+	font-weight:500 !important;
+	margin:0 !important
+}
+
+.nav-pills > li > a:hover,
+.nav-pills > li.active > a {
+	color:#4e8ad6 !important;
+	background:#f6f8fa !important
+}
+
+	.navbar-collapse {
+		padding:0 !important
+	}
+	.navbar-toggle {
+		margin:0 !important;
+		padding:0 !important;
+		float:left !important
+	}
 
 @media (max-width: 768px) {
 	body {
@@ -141,11 +213,35 @@ header {
 		width:auto;
 		margin:auto
 	}
+	.container {
+		padding:0 !important
+	}
+	.panel {
+		margin:0 !important;
+		border-bottom:1px solid #eee !important;
+		border-radius:0 !important
+	}
+	.result { 
+		background:#eee;
+		padding:15px 0;
+		color:#666;
+		font-weight:400;
+		font-size:14px;
+		margin:0
+	}
+	.result strong {
+		color:#57749a
+	}
+
+}
+
+@media (min-width: 768px) {
+	body {
+		background:url(../img/bg_desktop.jpg);
+		background-size:cover
+	}
 }
 
 @media (min-width:1280px) {
-	main {
-		width:1280px;
-		margin:auto
-	}
+	
 }

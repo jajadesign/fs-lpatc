@@ -12,16 +12,21 @@
   </hgroup>
   
   <div class="logo">
-  	<img src="assets/img/logo_home.png" class="responsive pull-middle" />
+  	<img src="assets/img/logo_home.png" class="img-responsive pull-middle" />
   </div>
   
   <div class="clearfix"></div>
 	
   <div class="logo-text">
-    <img src="assets/img/logo_text.png" class="responsive pull-middle" />
+    <img src="assets/img/logo_text.png" class="img-responsive pull-middle" />
 	</div>
-
-  <a href="lst.php" class="btn">
-    Se connecter pour voir les passagers
-  </a>
+	
+  <div class="row">
+  	<div class="col-lg-4 col-lg-offset-4">
+      <a href="lst.php" class=" btn-hero">
+        Se connecter pour voir les passagers
+      </a>
+    </div>
+  </div>
+  
 </main>
