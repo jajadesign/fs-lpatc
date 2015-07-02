@@ -2,17 +2,21 @@
 	<div class="col-xs-3">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-        menu
+      	<span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
     </div>
   </div>
   
   <div class="col-xs-6">
-  	<img src="assets/img/logo_main_mini.png" class="img-responsive pull-middle logo-mini" />
+  	<a href="index.php" title="Retour à l'accueil">
+    	<img src="assets/img/logo_main_mini.png" class="img-responsive pull-middle logo-mini" />
+    </a>
   </div>
   
   <div class="col-xs-3">
-  	<a href="#" class="pull-right">Profile</a>
+  	<a href="#" class="pull-right"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
   </div>
 
 </header>
@@ -20,7 +24,9 @@
 
 <header class="col-sm-3">
 	<div class="logo hidden-xs">
-  	<img src="assets/img/logo_main.png" class="img-responsive pull-middle" />
+  	<a href="index.php" title="Retour à l'accueil">
+    	<img src="assets/img/logo_main.png" class="img-responsive pull-middle logo-mini" />
+    </a>
   </div>
 
   <nav class="panel panel-default collapse navbar-collapse" role="navigation">
@@ -33,4 +39,8 @@
       <li role="presentation"><a href="#">Aide</a></li>
     </ul>
   </nav>
+  
+  <footer class="text-center hidden-xs">
+  	2015 Flight-singles.com
+  </footer>
 </header>
